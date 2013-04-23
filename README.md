@@ -1,7 +1,11 @@
 acpi_call_GUI
 =============
-This is a java program that provides a graphic interface to install the acpi_call kernel module.
+This is a java program that provides a graphic interface to install the acpi_call kernel module,
 It also automatically recompile kernel after a update.
+
+******************************************************************************************************************
+This program only works with Ubuntu and other debian-based distribution, and need to be installed firefox.
+******************************************************************************************************************
 
 To install:
 after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` .
