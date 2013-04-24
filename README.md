@@ -1,7 +1,9 @@
 acpi_call_GUI
 =============
-This is a java program that provides a graphic interface to install the acpi_call kernel module,
-It also automatically recompile kernel after an update.
+This is a java program that provides a graphic interface to:
+install the acpi_call kernel module and automatically recompile kernel after an update;
+Deactivate discrete GPU;
+Automatically deactivate discrete GPU on every boot.
 
 ******************************************************************************************************************
 This program only works with Ubuntu and other debian-based distributions, and need to be installed firefox.
