@@ -9,7 +9,7 @@ This program only works with Ubuntu and other debian-based distributions, and ne
 
 To install:
 after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` . 
-if you have the program in your home directory, you only need to type in terminal:
+if you have the program in your home directory (for example typing <code> git clone https://github.com/marcoDallas/acpi_call_GUI.git </code>), you only need to type in terminal:
 
 <code> cd acpi_call_GUI </code>
 
