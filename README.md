@@ -1,20 +1,33 @@
 acpi_call_GUI
 =============
 This is a java program that provides a graphic interface to install the acpi_call kernel module,
-It also automatically recompile kernel after a update.
+It also automatically recompile kernel after an update.
 
 ******************************************************************************************************************
-This program only works with Ubuntu and other debian-based distribution, and need to be installed firefox.
+This program only works with Ubuntu and other debian-based distributions, and need to be installed firefox.
 ******************************************************************************************************************
 
 To install:
-after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` .
+after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` . 
+if you have the program in your home directory, you only need to type in terminal:
+
+<code> cd acpi_call_GUI </code>
+
+<code> sudo chmod +x install.sh </code>
+
+<code> sudo ./install.sh </code>
 
 To execute:
-type in a terminal: `java -jar $HOME/acpi_call_GUI.jar`
+
+type in a terminal: 
+
+<code> java -jar $HOME/acpi_call_GUI.jar </code>
+
+See there for a video guide: https://www.youtube.com/watch?v=h33bvoR14x8
 
 Note:
-acpi_call module should be used with caution. I reccomend you to take a look of the readme of the acpi_call module: https://github.com/mkottman/acpi_call
+
+acpi_call module should be used with caution. I reccomend you to take a look to the readme of the acpi_call module: https://github.com/mkottman/acpi_call
 
 Copyright:
 
@@ -25,7 +38,7 @@ Copyright:
   the Free Software Foundation; either version 3 of the License, or
   (at your option) any later version.
   
-  This program is distributed in the hope that it will be useful,
+  acpi_call_GUI is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
@@ -44,7 +57,7 @@ Copyright:
   the Free Software Foundation, either version 3 of the License, or 
   (at your option) any later version.
  
-  This program is distributed in the hope that it will be useful, 
+  acpi_call is distributed in the hope that it will be useful, 
   but WITHOUT ANY WARRANTY; without even the implied warranty of 
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
   See the GNU General Public License for more details.
