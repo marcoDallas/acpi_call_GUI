@@ -1,6 +1,6 @@
 acpi_call_GUI
 =============
-This is a java program that provides a graphic interface to:
+This is a java program that provides a graphic interface that allows the user to:
 
 install the acpi_call kernel module and automatically recompile kernel after an update;
 
