@@ -49,5 +49,5 @@ chmod +x -R $url/acpi_call_GUI
 echo "Creating link of the java program to the user's home directory"
 ln -f /usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar $HOME
 echo "Installing prerequisites..."
-apt-get install git linux-headers-`uname -r` build-essential
+apt-get install linux-headers-`uname -r` build-essential
 echo "Installation complete"
