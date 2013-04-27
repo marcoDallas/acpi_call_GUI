@@ -2,7 +2,7 @@ acpi_call_GUI
 =============
 This is a java program that provides a graphic interface that allows the user to:
 
-install the acpi_call kernel module (kernel is recompiled automatically after each update);
+install the acpi_call kernel module (kernel would be recompiled automatically after each update);
 
 Deactivate discrete GPU;
 
