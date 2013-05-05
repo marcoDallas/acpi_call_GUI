@@ -9,7 +9,9 @@ Deactivate discrete GPU;
 Automatically deactivate discrete GPU on every boot.
 
 ******************************************************************************************************************
-This program only works with Ubuntu and other debian-based distributions, and need to be installed firefox.
+This version only works with Ubuntu and other debian-based distributions, and needs to be installed firefox.
+
+Fedora user? See there: https://github.com/marcoDallas/acpi_call_GUI_Fedora
 ******************************************************************************************************************
 
 To install:
