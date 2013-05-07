@@ -16,7 +16,7 @@ Fedora user? See there: [acpi_call_GUI_Fedora](https://github.com/marcoDallas/ac
 
 ## To install:
 after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` . 
-if you have the program in your home directory (for example typing <code> git clone https://github.com/marcoDallas/acpi_call_GUI.git </code>), you only need to type in terminal:
+if you have the program in your home directory (for example typing `git clone https://github.com/marcoDallas/acpi_call_GUI.git`), you only need to type in terminal:
 
 ```
 cd acpi_call_GUI 
@@ -47,8 +47,8 @@ acpi_call module should be used with caution. I reccomend you to take a look to 
 #### Here you can read eventual outputs or errors:
 ![Alt text](https://lh6.googleusercontent.com/-IEOGoYCWMfE/UYmEGILhp7I/AAAAAAAAA84/9n5yLkFDJf8/w602-h327-no/vlcsnap-2013-05-08-00h13m59s87.png "here you can read eventual outputs or errors")
 ***
-#### Copy here the 'Working ACPI handle OFF' relative to your computer:
-![Alt text](https://lh5.googleusercontent.com/-QXJtUV3sZaY/UYmEHqHcRAI/AAAAAAAAA9A/RRTKLsEG8vw/w896-h504-no/vlcsnap-2013-05-08-00h13m40s178.png "copy here the 'Working ACPI handle OFF' relative to your computer")
+#### Copy here the 'Working ACPI handle OFF' code relative to your computer:
+![Alt text](https://lh5.googleusercontent.com/-QXJtUV3sZaY/UYmEHqHcRAI/AAAAAAAAA9A/RRTKLsEG8vw/w896-h504-no/vlcsnap-2013-05-08-00h13m40s178.png "copy here the 'Working ACPI handle OFF' code relative to your computer")
 ***
 ## Copyright:
 
