@@ -2,41 +2,55 @@ acpi_call_GUI
 =============
 This is a java program that provides a graphic interface that allows the user to:
 
-install the acpi_call kernel module (kernel would be recompiled automatically after each update);
+ * Install the acpi_call kernel module (kernel would be recompiled automatically after each update);
+ 
+ * Deactivate discrete GPU;
+ 
+ * Automatically deactivate discrete GPU on every boot.
 
-Deactivate discrete GPU;
-
-Automatically deactivate discrete GPU on every boot.
-
-******************************************************************************************************************
+***
 This version only works with Ubuntu and other debian-based distributions, and needs to be installed firefox.
 
-Fedora user? See there: https://github.com/marcoDallas/acpi_call_GUI_Fedora
-******************************************************************************************************************
+Fedora user? See there: [acpi_call_GUI_Fedora](https://github.com/marcoDallas/acpi_call_GUI_Fedora "acpi_call_GUI_Fedora")
+***
 
-To install:
+## To install:
 after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` . 
 if you have the program in your home directory (for example typing <code> git clone https://github.com/marcoDallas/acpi_call_GUI.git </code>), you only need to type in terminal:
 
-<code> cd acpi_call_GUI </code>
+```
+cd acpi_call_GUI 
 
-<code> sudo chmod +x install.sh </code>
+sudo chmod +x install.sh 
 
-<code> sudo ./install.sh </code>
+sudo ./install.sh 
+```
 
-To execute:
+## To execute:
 
 type in a terminal: 
 
-<code> java -jar $HOME/acpi_call_GUI.jar </code>
+```
+java -jar $HOME/acpi_call_GUI.jar
+```
 
-See there for a video guide: https://www.youtube.com/watch?v=h33bvoR14x8
-
-Note:
+See there for a video guide: [Video tutorial acpi_call_GUI](https://www.youtube.com/watch?v=h33bvoR14x8 "Go to youtube")
+***
+## Note:
 
 acpi_call module should be used with caution. I reccomend you to take a look to the readme of the acpi_call module: https://github.com/mkottman/acpi_call
-
-Copyright:
+***
+## Screenshots:
+#### acpi_call_GUI:
+![Alt text](https://lh5.googleusercontent.com/-I0soYzPQ2EE/UYmEFHIYJfI/AAAAAAAAA80/67-difYg4iQ/w598-h329-no/vlcsnap-2013-05-08-00h14m39s212.png "acpi_call_GUI")
+***
+#### Here you can read eventual outputs or errors:
+![Alt text](https://lh6.googleusercontent.com/-IEOGoYCWMfE/UYmEGILhp7I/AAAAAAAAA84/9n5yLkFDJf8/w602-h327-no/vlcsnap-2013-05-08-00h13m59s87.png "here you can read eventual outputs or errors")
+***
+#### Copy here the 'Working ACPI handle OFF' relative to your computer:
+![Alt text](https://lh5.googleusercontent.com/-QXJtUV3sZaY/UYmEHqHcRAI/AAAAAAAAA9A/RRTKLsEG8vw/w896-h504-no/vlcsnap-2013-05-08-00h13m40s178.png "copy here the 'Working ACPI handle OFF' relative to your computer")
+***
+## Copyright:
 
   Copyright (C) 2013: Marco Dalla Libera 
   
