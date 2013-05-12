@@ -308,17 +308,28 @@ public class Acpi_call_GUIFrame extends JFrame{
         BufferedReader buffer=new BufferedReader(isr);
         try {
             while((tmp=buffer.readLine())!=null){
-                s+=tmp;
+                if(tmp.equals("0x0")) {
+                    s+="Discrete GPU correctly deactivated";
+                }
+                else {
+                    s+=tmp;
+                }
                 s+="\n";
                 textArea.setText(s);
             }
         } catch (IOException ex) {
             Logger.getLogger(Acpi_call_GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
-        if(process==0){ url="/usr/local/bin/acpi_call_GUI/log/install_log"; }
+        if(process==0){ 
+            url="/usr/local/bin/acpi_call_GUI/log/install_log"; 
+        }
         else{
-            if(process==1){ url="/usr/local/bin/acpi_call_GUI/log/deactivate_log"; }
-                else{ url="/usr/local/bin/acpi_call_GUI/log/automates_log"; }
+            if(process==1){ 
+                url="/usr/local/bin/acpi_call_GUI/log/deactivate_log"; 
+            }
+            else{ 
+                url="/usr/local/bin/acpi_call_GUI/log/automates_log"; 
+            }
         }
         PrintWriter printer;
         try {
