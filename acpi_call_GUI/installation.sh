@@ -55,4 +55,9 @@ do
     fi
     C=$(($C+1))
 done < /etc/rc.local
+TMP=$C'p'
+B=$(sed -n "$TMP" /etc/rc.local)
+if [ "$B" != "$D" ]
+then
 sed -i "$C i $D" /etc/rc.local
+fi
