@@ -35,7 +35,7 @@ rm -R /usr/local/bin/acpi_call
 rm -R /usr/local/bin/acpi_call_GUI
 #removes the scripts from rc.local
 C=1
-D="/usr/local/bin/acpi_call_GUI/turn_off_gpu.sh"
+D="/usr/local/bin/acpi_call_GUI/deactivate.sh"
 while read line
 do
 if [ "$line" = "$D" ] 
@@ -45,7 +45,12 @@ fi
 C=$(($C+1))
 done < /etc/rc.local
 N=$C'd'
+TMP=$C'p'
+B=$(sed -n "$TMP" /etc/rc.local)
+if [ "$B" = "$D" ]
+then
 sed -i -e "$N" /etc/rc.local
+fi
 #turn off script
 C=1
 D="/usr/local/bin/acpi_call_GUI/agg_acpi_call.sh"
