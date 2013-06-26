@@ -9,7 +9,7 @@ This is a java program that provides a graphic interface that allows the user to
  * Automatically deactivate discrete GPU on every boot.
 
 ***
-This version only works with Ubuntu and other debian-based distributions, and needs to be installed firefox.
+This version only works with Ubuntu and his derivates, and needs to be installed firefox.
 
 Fedora user? See there: [acpi_call_GUI_Fedora](https://github.com/marcoDallas/acpi_call_GUI_Fedora "acpi_call_GUI_Fedora")
 ***
