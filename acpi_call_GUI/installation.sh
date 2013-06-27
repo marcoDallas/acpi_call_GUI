@@ -36,7 +36,7 @@ url="/usr/local/bin/acpi_call_GUI"
 git clone http://github.com/mkottman/acpi_call.git /usr/local/bin/acpi_call 
 chown $USER -R /usr/local/bin/acpi_call
 cd /usr/local/bin/acpi_call 
-make >> $url/log/install_log
+make
 insmod acpi_call.ko 
 chown $USER /proc/acpi/call
 chmod +x $url/agg_acpi_call.sh 
