@@ -1,7 +1,7 @@
 acpi_call_GUI
 ===
-#### Wanna help me? ![donation_img](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif)
-[There's the way to make a donation](http://marcodallas.github.io/donation.html), thank you.
+#### Wanna help me?
+` [There's the way to make a donation](http://marcodallas.github.io/donation.html), thank you. `
 
 
 ***
