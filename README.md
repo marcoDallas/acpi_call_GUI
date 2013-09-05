@@ -1,6 +1,6 @@
 acpi_call_GUI
 ===
-#### Wanna help me?
+#### Wanna help me and the project?
 **[There's the way to make a donation](http://marcodallas.github.io/donation.html), thank you.**
 
 
