@@ -1,7 +1,7 @@
 acpi_call_GUI
 ===
 #### Wanna help me and the project?
-**[There's the way to make a donation](http://marcodallas.github.io/donation.html), thank you.**
+**[Here's the way to make a donation](http://marcodallas.github.io/donation.html), thank you.**
 
 
 ***
@@ -39,7 +39,7 @@ type in a terminal:
 java -jar $HOME/acpi_call_GUI.jar
 ```
 
-See there for a video guide: [Video tutorial acpi_call_GUI](https://www.youtube.com/watch?v=h33bvoR14x8 "Go to youtube")
+See here for a video guide: [Video tutorial acpi_call_GUI](https://www.youtube.com/watch?v=h33bvoR14x8 "Go to youtube")
 ***
 ## Note:
 
