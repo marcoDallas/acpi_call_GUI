@@ -16,7 +16,7 @@ This is a java program that provides a graphic interface that allows the user to
 ***
 This version only works with Ubuntu and his derivates, and needs to be installed firefox.
 
-Oder linux distros user? You just need the support for systemd! See there: [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
+Oder linux distros user? You just need the support for systemd! See here: [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
 ***
 
 ## To install:
