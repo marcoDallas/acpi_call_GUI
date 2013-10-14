@@ -34,6 +34,8 @@
 url="/usr/local/bin"
 echo "Copying files..."
 cp -r acpi_call_GUI $url
+cp acpiCallGui.png /usr/share/pixmaps
+cp acpi_call_GUI.desktop /usr/share/applications/
 mkdir $url/acpi_call_GUI/log
 mkdir $url/acpi_call_GUI/codes
 touch $url/acpi_call_GUI/log/install_log
@@ -41,6 +43,7 @@ touch $url/acpi_call_GUI/log/deactivate_log
 touch $url/acpi_call_GUI/log/automates_log
 touch $url/acpi_call_GUI/codes/off
 echo "Giving files the execute permission..."
+chmod +x /usr/share/applications/acpi_call_GUI.desktop
 chmod 777 $url/acpi_call_GUI/log/install_log
 chmod 777 $url/acpi_call_GUI/log/deactivate_log
 chmod 777 $url/acpi_call_GUI/log/automates_log
