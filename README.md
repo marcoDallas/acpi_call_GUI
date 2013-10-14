@@ -38,7 +38,10 @@ type in a terminal:
 ```
 java -jar $HOME/acpi_call_GUI.jar
 ```
-
+If you have a separate /home partition, you may need to use this command to launch acpi_call_GUI:
+```
+java -jar /usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar
+```
 See here for a video guide: [Video tutorial acpi_call_GUI](https://www.youtube.com/watch?v=h33bvoR14x8 "Go to youtube")
 ***
 ## Note:
