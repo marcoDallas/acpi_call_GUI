@@ -32,8 +32,7 @@ sudo ./install.sh
 ```
 
 ## To execute:
-
-type in a terminal: 
+Search the program in yuor dash and click on the icon, or type in a terminal: 
 
 ```
 java -jar $HOME/acpi_call_GUI.jar
