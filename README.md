@@ -20,7 +20,7 @@ Oder linux distros user? You just need the support for systemd! See here: [acpi_
 ***
 
 ## To install:
-after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` . 
+after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` as root. 
 if you have the program in your home directory (for example typing `git clone https://github.com/marcoDallas/acpi_call_GUI.git`), you only need to type in terminal:
 
 ```
@@ -35,11 +35,11 @@ sudo ./install.sh
 Search the program in yuor dash and click on the icon, or type in a terminal: 
 
 ```
-java -jar $HOME/acpi_call_GUI.jar
+sudo java -jar $HOME/acpi_call_GUI.jar
 ```
 If you have a separate /home partition, you may need to use this command to launch acpi_call_GUI:
 ```
-java -jar /usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar
+sudo java -jar /usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar
 ```
 See here for a video guide: [Video tutorial acpi_call_GUI](https://www.youtube.com/watch?v=h33bvoR14x8 "Go to youtube")
 ***
