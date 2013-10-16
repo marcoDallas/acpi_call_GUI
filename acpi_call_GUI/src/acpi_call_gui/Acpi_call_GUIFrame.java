@@ -148,6 +148,7 @@ public class Acpi_call_GUIFrame extends JFrame{
         donate.setBorderPainted(false);
         donate.setContentAreaFilled(false);
         donate.setOpaque(true);
+        donate.setCursor(new Cursor(Cursor.HAND_CURSOR));
         panel.add(donate);
         JLabel credits=new JLabel("Copyright (C) 2013 Marco Dalla Libera");
         credits.setHorizontalAlignment(JLabel.CENTER);
@@ -222,24 +223,17 @@ public class Acpi_call_GUIFrame extends JFrame{
             }
 
             @Override
-            public void mousePressed(MouseEvent e) {
-                
-            }
+            public void mousePressed(MouseEvent e) {}
 
             @Override
-            public void mouseReleased(MouseEvent e) {
-                
-            }
+            public void mouseReleased(MouseEvent e) {}
 
             @Override
-            public void mouseEntered(MouseEvent e) {
-                
-            }
+            public void mouseEntered(MouseEvent e) {}
 
             @Override
             public void mouseExited(MouseEvent e) {
-                
-            }
+                }
         });
     }
     /**
@@ -257,7 +251,7 @@ public class Acpi_call_GUIFrame extends JFrame{
     private void installazione(){
         process=0;
         if(!(insertCode()))return;
-        ProcessBuilder pb=new ProcessBuilder("gksudo","/usr/local/bin/acpi_call_GUI/installation.sh");
+        ProcessBuilder pb=new ProcessBuilder("/bin/sh","/usr/local/bin/acpi_call_GUI/installation.sh");
         pb.redirectErrorStream(true);
         try {
             script=pb.start();
@@ -281,7 +275,7 @@ public class Acpi_call_GUIFrame extends JFrame{
             Logger.getLogger(Acpi_call_GUIFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
         process=1;
-        ProcessBuilder pb=new ProcessBuilder("gksudo","/usr/local/bin/acpi_call_GUI/deactivate.sh");
+        ProcessBuilder pb=new ProcessBuilder("/bin/sh","/usr/local/bin/acpi_call_GUI/deactivate.sh");
         pb.redirectErrorStream(true);
         try {
             script=pb.start();
@@ -295,7 +289,7 @@ public class Acpi_call_GUIFrame extends JFrame{
      */
     private void automatizza(){
         process=2;
-        ProcessBuilder pb=new ProcessBuilder("gksudo","/usr/local/bin/acpi_call_GUI/automates.sh");
+        ProcessBuilder pb=new ProcessBuilder("/bin/sh","/usr/local/bin/acpi_call_GUI/automates.sh");
         pb.redirectErrorStream(true);
         try {
             script=pb.start();

@@ -49,7 +49,7 @@ public class Acpi_call_GUI {
         JFrame frame=new Acpi_call_GUIFrame();
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setResizable(false);
-        frame.setTitle("Acpi_call_GUI");
+        frame.setTitle("Acpi_call_GUI 1.3");
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }

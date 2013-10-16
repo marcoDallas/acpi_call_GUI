@@ -1,10 +1,14 @@
 [Desktop Entry]
-Version=1.2
+Version=1.3
 Name=acpi_call_GUI
 Comment=Installs acpi_call and deactivates discrete GPU
+<<<<<<< HEAD
+Exec=sudo java -jar "/usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar"
+=======
 Exec=java -jar "/usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar"
+>>>>>>> b1c8540885ed7e37310b0e06e79d100b1ec2aa83
 Icon=/usr/share/pixmaps/acpiCallGui.png
-Terminal=false
+Terminal=true
 Type=Application
 StartupNotify=true
 Categories=Settings;
