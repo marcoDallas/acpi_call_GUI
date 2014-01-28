@@ -50,7 +50,15 @@ chmod 777 $url/acpi_call_GUI/log/automates_log
 chmod 777 $url/acpi_call_GUI/codes/off
 chmod +x -R $url/acpi_call_GUI
 echo "Creating link of the java program to the user's home directory"
-ln -f /usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar $HOME
+url="/usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar"
+part1=$(df /usr/local/bin/acpi_call_GUI/acpi_call_GUI.jar | awk '/^\/dev/ {print $1}')
+part2=$(df $HOME | awk '/^\/dev/ {print $1}')
+if [ $part1 = $part2 ]
+then
+  ln -f $url $HOME
+else
+  ln -s $url $HOME
+fi
 echo "Installing prerequisites..."
 apt-get install linux-headers-`uname -r` build-essential
 echo "Installation complete"
