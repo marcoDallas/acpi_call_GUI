@@ -1,9 +1,5 @@
 acpi_call_GUI
 ===
-#### Do you want to help me and the project?
-**[Here's the way to make a donation](http://marcodallas.github.io/donation.html), thank you.**
-
-
 ***
 This is a java program that provides a graphic interface that allows the user to:
 
