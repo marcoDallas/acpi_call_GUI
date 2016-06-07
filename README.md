@@ -1,5 +1,9 @@
 acpi_call_GUI
 ===
+## ❗❗❗ IMPORTANT  NOTICE:❗❗❗
+Since **Ubuntu 16.04** (and his derivatives) you must use [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
+
+or if you want to use this version you have to manually enable rc-local.service (systemd service)
 ***
 This is a java program that provides a graphic interface that allows the user to:
 
@@ -10,7 +14,7 @@ This is a java program that provides a graphic interface that allows the user to
  * Automatically deactivate discrete GPU on every boot.
 
 ***
-This version only works with Ubuntu and his derivates, and needs to be installed firefox.
+This version only works with Ubuntu and his derivatives, and needs to be installed firefox.
 
 Oder linux distros user? You just need the support for systemd! See here: [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
 ***
