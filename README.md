@@ -3,7 +3,10 @@ acpi_call_GUI
 ## ❗❗❗ IMPORTANT  NOTICE:❗❗❗
 Since **Ubuntu 16.04** (and his derivatives) you must use [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
 
-or if you want to use this version you have to manually enable rc-local.service (systemd service)
+or if you want to use this version you have to manually enable rc-local.service (systemd service):
+```
+sudo systemctl enable rc-local.service
+```
 ***
 This is a java program that provides a graphic interface that allows the user to:
 
@@ -42,6 +45,20 @@ See here for a video guide: [Video tutorial acpi_call_GUI](https://www.youtube.c
 ## Note:
 
 acpi_call module should be used with caution. I reccomend you to take a look to the readme of the acpi_call module: https://github.com/mkottman/acpi_call
+***
+##To uninstall:
+If you deleted the acpi_call_GUI folder in your home directory re-type the following command in a terminal:
+```
+git clone https://github.com/marcoDallas/acpi_call_GUI.git
+```
+if you haven't deleted the folder - or if you just used the command above - type now the following commands:
+```
+cd acpi_call_GUI
+
+sudo chmod +x uninstall.sh
+
+sudo ./uninstall.sh
+```
 ***
 ## Screenshots:
 #### acpi_call_GUI:
