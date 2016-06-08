@@ -1,6 +1,6 @@
 #!/bin/sh
 
- # Copyright 2013,2014 (C) Marco Dalla Libera 
+ # Copyright 2013-2016 (C) Marco Dalla Libera 
  # 
  # acpi_call_GUI is free software; you can redistribute it and/or modify
  # it under the terms of the GNU General Public License as published by
