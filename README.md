@@ -59,6 +59,7 @@ sudo chmod +x uninstall.sh
 
 sudo ./uninstall.sh
 ```
+Finally you can delete the acpi_call_GUI folder and the acpi_call_GUI.jar file from your home directory. 
 ***
 ## Screenshots:
 #### acpi_call_GUI:
