@@ -76,7 +76,7 @@ Finally you can delete the acpi_call_GUI folder and the acpi_call_GUI.jar file f
 ***
 ## Copyright:
 
-  Copyright (C) 2013,2014: Marco Dalla Libera 
+  Copyright (C) 2013-2016: Marco Dalla Libera 
   
   acpi_call_GUI is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
