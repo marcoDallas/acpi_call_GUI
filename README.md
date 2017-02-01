@@ -1,7 +1,7 @@
 acpi_call_GUI
 ===
 ## ❗❗❗ IMPORTANT  NOTICE:❗❗❗
-Since **Ubuntu 16.04** (and his derivatives) you must use [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
+Since **Ubuntu 16.04** (and its derivatives) you must use [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
 
 or if you want to use this version you have to manually enable rc-local.service (systemd service):
 ```
@@ -12,12 +12,13 @@ This is a java program that provides a graphic interface that allows the user to
 
  * Install the acpi_call kernel module (kernel would be recompiled automatically after each update);
  
- * Deactivate discrete GPU;
+ * Deactivate discrete GPU after unloading its driver;
  
  * Automatically deactivate discrete GPU on every boot.
 
 ***
-This version only works with Ubuntu and his derivatives, and needs to be installed firefox.
+This version only works with Ubuntu and its derivatives, and needs to be installed firefox: 
+it will try to open the default web browser but if it fails it will fall back and launch Firefox.
 
 Oder linux distros user? You just need the support for systemd! See here: [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
 ***
@@ -29,20 +30,27 @@ if you have downloaded the program in your home directory (for example typing `g
 ```
 cd acpi_call_GUI 
 
-sudo chmod +x install.sh 
+chmod +x install.sh 
 
-sudo ./install.sh 
+./install.sh 
 ```
-
+#### Attention - prerequisites:
+Please note that 'pkexec' is used to grant super-user access, so make sure that `polkit` is installed 
+in your system.
+***
 ## To execute:
 Search the program in yuor dash and click on the icon, or type in a terminal: 
 
 ```
-sudo java -jar $HOME/acpi_call_GUI.jar
+java -jar $HOME/acpi_call_GUI.jar
 ```
-See here for a video guide: [Video tutorial acpi_call_GUI](https://www.youtube.com/watch?v=h33bvoR14x8 "Go to youtube")
+It will ask for the administrator password when necessary, it may also ask for it multiple times.
+Also since version 2.0 a reboot is required after installation to properly unload the discrete GPU driver.
+
+See here for a (legacy) video guide: [Video tutorial acpi_call_GUI](https://www.youtube.com/watch?v=h33bvoR14x8 "Go to youtube")
 ***
 ## Note:
+Since version 2.0 this program uses my own fork of acpi_call, which have kernel 3.17+ compatibilty and other small fixes.
 
 acpi_call module should be used with caution. I reccomend you to take a look to the readme of the acpi_call module: https://github.com/mkottman/acpi_call
 ***
@@ -63,7 +71,7 @@ Finally you can delete the acpi_call_GUI folder and the acpi_call_GUI.jar file f
 ***
 ## Screenshots:
 #### acpi_call_GUI:
-![Image](https://lh5.googleusercontent.com/gbacM0WXNlvXefAVG-pzOlEfTxtFDoeXybGld4Ky2T8=w614-h314-no "acpi_call_GUI")
+![Image](https://lh3.googleusercontent.com/5Pyo03ty4cfRaggaf36HWJO8uujS8stTGPmNdCTguvciTBVRt6BukHFsaKnNTsGRuhdcIvPpz2SJoB83WohdD7fW7xELv2ZgWzU3ovohDGbHCv0wmq_fE2HaHMdFcfLNmiARH27rzKGfQZ6nJbN4E3YN1STpeO6JHZuSs6cmwFZzFJGBklTHm8_TcuJS953GW5MGOO2jRSEN56eNl1qzqi4-sXglOIUv8ixX4uXwrKgRTQVNhOggtq31Bu13CiPYycarDffsD4asvClf-SvX2UaOnRKuffrrBu0XpCj5kJpThisEDfVZntmQgKIH2QtoJbEaW7_3JNZEZIxCnWggFI1CNVuA31sZwTzei2ru5vG75dY2g1rr2uzYTn9fDB7RnVlVSUjVIRaoaXrQxzM1rIWa9V-3gRZYeI89gUOD2zNjbUllVil7Hr2uqGxefjsmk8bU-kkrOW7ezcYcIKAmfRqe1gNJpN_4kP47pkwoxtfT18IG5JVUH6sApGp1HSIKfS6GEANGsMNAy0dgwg9CvYuQu34hurQCY0AwyflGUZCDcOepEpUuvokVMDbz8xq4ZK_CdG1iJCnSI-Z_WXEPdQJrpNOThEiY0PjBmH2AtyoT9qESDinQ=w630-h330-no "acpi_call_GUI")
 ***
 #### Since version 1.4 you can try to automatically find a deactivation code!
 ![Image](https://lh6.googleusercontent.com/-xudmJqs6jKA/VIGiHnrHR_I/AAAAAAAAJfA/PVUCJYQcuVE/w644-h347-no/Schermata.png "Since version 1.4 you can try to automatically find a deactivation code!")
@@ -76,7 +84,7 @@ Finally you can delete the acpi_call_GUI folder and the acpi_call_GUI.jar file f
 ***
 ## Copyright:
 
-  Copyright (C) 2013-2016: Marco Dalla Libera 
+  Copyright (C) 2013-2017: Marco Dalla Libera 
   
   acpi_call_GUI is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -95,14 +103,4 @@ Finally you can delete the acpi_call_GUI folder and the acpi_call_GUI.jar file f
   
   and:
   
-  Copyright (c) 2010: Michal Kottman
-  
-  acpi_call is free software: you can redistribute it and/or modify 
-  it under the terms of the GNU General Public License as published by 
-  the Free Software Foundation, either version 3 of the License, or 
-  (at your option) any later version.
- 
-  acpi_call is distributed in the hope that it will be useful, 
-  but WITHOUT ANY WARRANTY; without even the implied warranty of 
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
-  See the GNU General Public License for more details.
+  Copyright (c) 2010: Michal Kottman for acpi_call module, which is used by this program.
