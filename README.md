@@ -63,7 +63,7 @@ if you haven't deleted the folder - or if you just used the command above - type
 ```
 cd acpi_call_GUI
 
-sudo chmod +x uninstall.sh
+chmod +x uninstall.sh
 
 sudo ./uninstall.sh
 ```
