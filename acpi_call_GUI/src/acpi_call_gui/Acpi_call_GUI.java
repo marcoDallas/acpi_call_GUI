@@ -44,6 +44,16 @@ public class Acpi_call_GUI {
     		JOptionPane.showMessageDialog(null,"Please install polkit, it's a prerequisite","Exiting program...",JOptionPane.ERROR_MESSAGE);
             System.exit(1);
     	}
+    	if(checker.getUbuntuRelease()>=16.04){
+    		int returnValue = JOptionPane.showConfirmDialog(null,"Since version 16.04 Ubuntu supports systemd,\nplease use the systemd variant of this program.\n click 'OK' to go to its download page, 'cancel' to exit.","Attention:",JOptionPane.OK_CANCEL_OPTION);
+    		if(returnValue==JOptionPane.YES_OPTION){
+    			ACGCore core=new ACGCore();
+    			if(!(core.openWebBrowser("https://github.com/marcoDallas/acpi_call_GUI_systemd"))){
+    				JOptionPane.showMessageDialog(null,"Firefox is required","Exiting program...",JOptionPane.ERROR_MESSAGE);
+    			}
+    		}
+    		System.exit(1);
+    	}
         @SuppressWarnings("unused")
 		ACGFrame frame = new ACGFrame();
     }
