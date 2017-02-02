@@ -12,7 +12,7 @@ This is a java program that provides a graphic interface that allows the user to
 
  * Install the acpi_call kernel module (kernel would be recompiled automatically after each update);
  
- * Deactivate discrete GPU after unloading its driver;
+ * Deactivate discrete GPU after unloading its driver (supports radeon, amdgpu and nouveau);
  
  * Automatically deactivate discrete GPU on every boot.
 
