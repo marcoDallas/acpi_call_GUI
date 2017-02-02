@@ -25,10 +25,15 @@ Oder linux distros user? You just need the support for systemd! See here: [acpi_
 
 ## To install:
 after downloading the program, enter the directory acpi_call_GUI and launch `install.sh` as root. 
-if you have downloaded the program in your home directory (for example typing `git clone https://github.com/marcoDallas/acpi_call_GUI.git`), you only need to type in a terminal:
+if you have downloaded the program in your home directory, for example by typing:
 
 ```
-cd acpi_call_GUI 
+git clone https://github.com/marcoDallas/acpi_call_GUI.git ~/
+```
+then you only need to type in a terminal:
+
+```
+cd ~/acpi_call_GUI 
 
 chmod +x install.sh 
 
@@ -37,6 +42,8 @@ chmod +x install.sh
 #### Attention - prerequisites:
 Please note that 'pkexec' is used to grant super-user access, so make sure that `polkit` is installed 
 in your system.
+
+Also Java needs to be installed, at least version 8: `openjdk-8-jre` or Oracle Java 8.
 ***
 ## To execute:
 Search the program in yuor dash and click on the icon, or type in a terminal: 
@@ -57,11 +64,11 @@ acpi_call module should be used with caution. I reccomend you to take a look to 
 ##To uninstall:
 If you deleted the acpi_call_GUI folder in your home directory re-type the following command in a terminal:
 ```
-git clone https://github.com/marcoDallas/acpi_call_GUI.git
+git clone https://github.com/marcoDallas/acpi_call_GUI.git ~/
 ```
 if you haven't deleted the folder - or if you just used the command above - type now the following commands:
 ```
-cd acpi_call_GUI
+cd ~/acpi_call_GUI
 
 chmod +x uninstall.sh
 
