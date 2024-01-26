@@ -1,5 +1,7 @@
 acpi_call_GUI
 ===
+***
+This repository is now archived. As of 2024 this software should no longer be needed, so I have decided not to maintain it anymore.
 ## ❗❗❗ IMPORTANT  NOTICE:❗❗❗
 Since **Ubuntu 16.04** (and its derivatives) you must use [acpi_call_GUI_systemd](https://github.com/marcoDallas/acpi_call_GUI_systemd "acpi_call_GUI_systemd")
 
